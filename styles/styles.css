@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+.fonting {
+  font-family: Inter;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fitness {
+  font-weight: 700;
+  font-style: italic;
+  color: #e6533c;
+  font-size: 36px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-items {
+  display: flex;
+  /* justify-content: space-around; */
+  border: 1px solid white;
+  border-radius: 64px;
+  background-color: black;
+  /* padding: 12px 36px; */
+}
+
+.home-btn {
+  background-color: red;
+  border-radius: 46px;
+}
+
+.nav-items > p {
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: white;
+}
+
+/* .home {
+    color: white;
+    background-color: #E6533C;
+    border-radius: 16px;
+} */
+
+header {
+  margin: 60px 200px;
+}
+
+.titleAndImage {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.title-head {
+  font-size: 5rem;
+  font-family: Inter;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.shape {
+  font-family: miama;
+  font-weight: 500;
+  font-size: 8rem;
+  display: float;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.join,
+.download {
+  color: white;
+  padding: 16px 48px;
+  border-radius: 46px;
+  font-size: 1.2rem;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.join {
+  background-color: red;
+}
+
+.download {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.change {
+  margin: 60px 200px;
+}
+
+.title-change {
+  color: white;
+  margin-top: 50px;
+  font-size: 3rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.description-change {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.circle-pics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-pics > img {
+  border-radius: 100%;
+}
