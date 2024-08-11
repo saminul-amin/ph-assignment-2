@@ -74,7 +74,7 @@ header {
 
 .description {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .join,
@@ -97,29 +97,92 @@ header {
 }
 
 .change {
-  margin: 60px 200px;
+  margin: 96px 200px;
 }
 
 .title-change {
   color: white;
-  margin-top: 50px;
   font-size: 3rem;
   margin-bottom: 12px;
   text-align: center;
 }
 
 .description-change {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
   text-align: center;
   margin-bottom: 48px;
 }
 
 .circle-pics {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
 }
 
-.circle-pics > img {
+.circle-pics > div > img {
   border-radius: 100%;
+}
+
+.circle-pics > div > h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+}
+
+.circle-pics > div > p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.run {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  background-color: rgba(34, 34, 34, 1);
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 16px;
+}
+
+.run-all {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 50px;
+}
+
+.run-title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 12px;
+  text-align: left;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+.run-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  margin-bottom: 48px;
+  margin-left: 24px;
+  line-height: 21px;
+}
+
+.run-img {
+  margin-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  width: 85%;
+}
+
+.run-img > img {
+  width: 100%;
+  border-radius: 16px;
+  
+}
+
+.run-all > button {
+  margin-left: 24px;
 }
