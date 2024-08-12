@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/miama");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .fonting {
   font-family: Inter;
   background-color: rgba(17, 17, 17, 1);
@@ -64,14 +69,11 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 600px;
+    margin-left: 400px;
     margin-top: 16px;
   }
   .nav-items {
     display: none;
-  }
-  header {
-    margin: 60px 64px;
   }
 }
 
@@ -122,11 +124,9 @@ header {
 @media only screen and (max-width: 576px) {
   .titleAndImage {
     flex-direction: column;
-    /* justify-content: none; */
   }
-  .title {
-    margin-right: 0px;
-    padding-right: 0px;
+  header {
+    margin: 60px 64px;
   }
 }
 
@@ -167,6 +167,15 @@ header {
 .circle-pics > div > p {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 576px) {
+  .change {
+    margin: 60px 64px;
+  }
+  .circle-pics {
+    flex-direction: column;
+  }
 }
 
 .run {
@@ -214,10 +223,18 @@ header {
 .run-img > img {
   width: 100%;
   border-radius: 16px;
+  margin-bottom: 46px;
 }
 
 .run-all > button {
   margin-left: 24px;
+}
+
+@media screen and (max-width: 576px) {
+  .run {
+    margin: 60px 64px;
+    flex-direction: column;
+  }
 }
 
 .bmi {
@@ -236,6 +253,12 @@ header {
 .bmi-description {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 576px) {
+  .bmi {
+    margin: 60px 64px;
+  }
 }
 
 .challenge {
@@ -306,6 +329,20 @@ select {
   width: 40%;
 }
 
+@media screen and (max-width: 576px) {
+  .challenge {
+    margin-left: 60px;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin: 60px auto; */
+  }
+  .bmi-chart, .bmi-calculate {
+    margin-left: 24px;
+    margin-right: 24px;
+    align-items: center;
+  }
+}
+
 .meet {
   color: white;
   font-size: 3rem;
@@ -321,6 +358,12 @@ select {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 576px) {
+  .meet-our-team {
+    margin: 60px 64px;
+  }
+}
+
 .teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -329,11 +372,23 @@ select {
   margin-right: 200px;
   margin-bottom: 60px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
 }
 
 .team-member > img {
   width: 100%;
   object-fit: contain;
+  border-radius: 18px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .teams {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 60px 64px;
+  }
 }
 
 footer {
@@ -392,4 +447,21 @@ hr {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 12px 18px;
+  }
+  .footer-1 {
+    flex-direction: column;
+    margin: 60px 64px;
+    margin-bottom: 30px;
+  }
+  .fitness-2, .footer-des {
+    margin-bottom: 24px; 
+  }
+  .get-1, .get-2 {
+    margin-bottom: 18px;
+  }
 }
