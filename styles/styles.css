@@ -186,3 +186,110 @@ header {
 .run-all > button {
   margin-left: 24px;
 }
+
+.bmi {
+  margin-top: 80px;
+  margin-left: 420px;
+  margin-right: 420px;
+  margin-bottom: 80px;
+}
+
+.bmi-calc {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.bmi-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.challenge {
+  background-color: rgba(34, 34, 34, 1);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 48px;
+}
+
+.bmi-chart {
+  margin-left: 200px;
+}
+
+.chart {
+  color: white;
+  font-size: 2rem;
+}
+
+.chart-table {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.chart-table, td, th {
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-collapse: collapse;
+  padding: 12px 20px;
+}
+
+.chart-table th {
+  color: white;
+}
+
+.bmi-calculate {
+  margin-right: 200px;
+}
+
+.chart-des {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.input-1 > input, .input-2 > input, select {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  margin-right: 12px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+select {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.inpt-1, .input-2 > input {
+  display: inline;
+  width: 40%;
+}
+
+.meet {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.meet-des {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0px auto;
+}
+
+.team-member > img {
+  width: 100%;
+}
