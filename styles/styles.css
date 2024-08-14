@@ -126,6 +126,59 @@ header {
   border: 1px solid white;
 }
 
+.image {
+  position: relative;
+}
+
+.free-workout-vid {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 130px;
+  left: 150px;
+  font-family: Inter;
+}
+.free-workout-vid > h3 {
+  font-size: 2.5rem;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+.free-workout-vid > p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.video {
+  position: relative;
+  bottom: 64px;
+  display: flex;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 16px;
+}
+.circle {
+  height: 3rem;
+  width: 3rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-right: 12px;
+  /* vertical-align: middle; */
+  /* display: inline-block; */
+}
+.item > h2 {
+  margin: 0px;
+  font-size: 2rem;
+  /* margin-top: 8px; */
+  margin-bottom: 0px;
+}
+.item > p {
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 3px;
+}
+
 @media only screen and (max-width: 576px) {
   .titleAndImage {
     flex-direction: column;
@@ -134,6 +187,9 @@ header {
     margin: 60px 64px;
   }
   .title br {
+    display: none;
+  }
+  .free-workout-vid, .video {
     display: none;
   }
 }
@@ -471,41 +527,15 @@ select {
 .name {
   position: absolute;
   color: white;
-  bottom: 108px;
+  bottom: 72px;
   left: 24px;
 }
 .train {
   position: absolute;
-  color: rgba(255, 255, 255, 0.4);
-  bottom: 86px;
+  color: rgba(255, 255, 255, 0.5);
+  bottom: 50px;
   left: 24px;
 }
-
-/* .memb-1 {
-  grid-area: memb1;
-}
-.memb-2 {
-  grid-area: memb2;
-}
-.memb-3 {
-  grid-area: memb3;
-}
-.memb-4 {
-  grid-area: memb4;
-}
-.memb-5 {
-  grid-area: memb5;
-}
-.memb-6 {
-  grid-area: memb6;
-}
-.teams {
-  display: grid;
-  grid-template-areas: 
-  "memb1 memb2 memb3"
-  "memb4 memb5 memb6"
-  ;
-} */
 
 @media screen and (max-width: 576px) {
   .teams {
@@ -564,9 +594,9 @@ hr {
 
 .right {
   color: rgba(255, 255, 255, 0.4);
-  text-align:center; 
+  text-align: center; 
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: 0;
   right: 0;
   margin: auto;
