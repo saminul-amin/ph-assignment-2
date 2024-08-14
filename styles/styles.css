@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/miama");
 
-/* * {
+body {
   margin: 0;
   padding: 0;
-} */
+}
 
 .fonting {
   font-family: Inter;
@@ -14,6 +14,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
 }
 
 .fitness {
@@ -27,11 +29,10 @@
 
 .nav-items {
   display: flex;
-  /* justify-content: space-around; */
-  border: 1px solid white;
+  justify-content: space-between;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
   border-radius: 64px;
   background-color: black;
-  /* padding: 12px 36px; */
 }
 
 .home-btn {
@@ -42,9 +43,11 @@
 .nav-items > p {
   padding-left: 36px;
   padding-right: 36px;
-  padding-top: 6px;
+  padding-top: 10px;
   padding-bottom: 6px;
+  margin: 0;
   color: white;
+
 }
 
 .hamburger {
@@ -304,17 +307,6 @@ th {
   margin-bottom: 24px;
 }
 
-.input-1 > input,
-.input-2 > input,
-select {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 12px 20px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
-  margin-right: 12px;
-}
-
 input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -323,18 +315,45 @@ select {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.inpt-1,
-.input-2 > input {
-  display: inline;
-  width: 40%;
+.inpt-1, .inpt-2, .age, select {
+  font-family: Inter;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-right: 12px;
+}
+
+.inpt-1 {
+  grid-area: inpt1;
+}
+.inpt-2 {
+  grid-area: inpt2;
+}
+.age {
+  grid-area: age;
+}
+.sex {
+  grid-area: sex;
+}
+.factor {
+  grid-area: factor;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+  "inpt1 inpt2"
+  "age sex"
+  "factor factor"
+  ;
 }
 
 @media screen and (max-width: 576px) {
   .challenge {
     margin-left: 60px;
-    flex-direction: column;
-    /* align-items: center; */
-    /* margin: 60px auto; */
+    flex-direction: column; 
   }
   .bmi-chart, .bmi-calculate {
     margin-left: 24px;
@@ -367,7 +386,7 @@ select {
 .teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-gap: 1rem;
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 60px;
@@ -377,12 +396,58 @@ select {
 
 .team-member > img {
   width: 100%;
+  max-height: 100%;
+  /* height: 33.33vh; */
   object-fit: contain;
-  border-radius: 18px;
+  border-radius: 24px;
   padding-top: 12px;
   padding-left: 12px;
   padding-right: 12px;
+  padding-bottom: 12px;
 }
+
+.team-member {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  color: white;
+  bottom: 108px;
+  left: 24px;
+}
+.train {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  bottom: 86px;
+  left: 24px;
+}
+
+/* .memb-1 {
+  grid-area: memb1;
+}
+.memb-2 {
+  grid-area: memb2;
+}
+.memb-3 {
+  grid-area: memb3;
+}
+.memb-4 {
+  grid-area: memb4;
+}
+.memb-5 {
+  grid-area: memb5;
+}
+.memb-6 {
+  grid-area: memb6;
+}
+.teams {
+  display: grid;
+  grid-template-areas: 
+  "memb1 memb2 memb3"
+  "memb4 memb5 memb6"
+  ;
+} */
 
 @media screen and (max-width: 576px) {
   .teams {
