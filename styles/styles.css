@@ -72,7 +72,7 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-left: 400px;
+    margin-left: 250px;
     margin-top: 16px;
   }
   .nav-items {
@@ -91,13 +91,14 @@ header {
   font-family: Inter;
   font-weight: 900;
   margin-bottom: 0;
+  line-height: 88px;
 }
 
 .shape {
   font-family: miama;
   font-weight: 500;
-  font-size: 8rem;
-  display: float;
+  font-size: 10rem;
+  line-height: 12px;
 }
 
 .description {
@@ -113,6 +114,7 @@ header {
   font-size: 1.2rem;
   font-family: Inter;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .join {
@@ -130,6 +132,9 @@ header {
   }
   header {
     margin: 60px 64px;
+  }
+  .title br {
+    display: none;
   }
 }
 
@@ -359,6 +364,59 @@ select {
     margin-left: 24px;
     margin-right: 24px;
     align-items: center;
+  }
+}
+
+.membership-form {
+  margin: 96px 200px;
+}
+
+.member-form {
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding-left: 12px;
+}
+
+.form-and-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.member-form > input {
+  font-family: Inter;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-right: 12px;
+  width: 85%;
+  color: white;
+}
+
+.form-title {
+  color: white;
+}
+
+.image-for-membership {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.mrg {
+  margin-bottom: 84px;
+}
+
+@media screen and (max-width: 576px) {
+  .membership-form {
+    margin: 60px 64px;
+  }
+  .form-and-img {
+    flex-direction: column;
+  }
+  .mrg > br {
+    display: none;
   }
 }
 
